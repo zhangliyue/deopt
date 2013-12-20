@@ -1,0 +1,50 @@
+<h1>Listing people</h1>
+
+<table>
+  <tr>
+    <th>Age</th>
+    <th></th>
+    <th>Room</th>
+    <th></th>
+    <th>Name</th>
+    <th></th>
+    <th>Sex</th>
+    <th></th>
+    <th>Address</th>
+    <th></th>
+    <th>Kai Time</th>
+    <th></th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @p.each do |person| %>
+  <tr>
+    <td><%= person.age %></td>
+    <td></td>
+    <td><%= person.room%></td>
+    <td></td>
+    <td><%= person.name %></td>
+    <td></td>
+    <td><%= person.sex %></td>
+    <td></td>
+    <td><%= person.address %></td>
+    <td></td>
+    <td><%= person.created_at%></td>
+    <td></td>
+    <td><%= person.time%></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'tui fang', person, :method=>:delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+Number:<%=$room[0].num%>
+<%= link_to 'New Person', new_person_path(:room_id=>@room) %>

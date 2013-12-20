@@ -1,0 +1,72 @@
+<h1>Kong rooms</h1>
+
+<table>
+  <tr>
+    <th>Leibie</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Number</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Zhuangtai</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <td></td>
+    <td></td>
+    <th>Operation</th>
+  </tr>
+
+<% @rooms.each do |room| %>
+  <tr>
+    <td><%= room.leibie %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= room.number %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= room.zhuangtai %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= room.price %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= link_to 'kai fang', new_person_path(:room_id=>room) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

@@ -1,0 +1,15 @@
+<%= form_tag do%>
+  <fieldset>
+  <div>
+   <label for="name">name: zhangyue </label>
+   </div>
+  <div>
+   <label for="password">password:</label>
+   <%=password_field_tag :password, params[:password]%>
+   </div>
+  <div>
+   <%=submit_tag "login"%>
+</div>
+</fieldset>
+<%end%>
+

@@ -1,0 +1,31 @@
+ $(function(){
+ var form='<%= escape_javascript(render 'form') %>';
+ $('#box_btn').click(function(){   //给box_btn绑定一个鼠标点击的事件
+
+        $.blockUI({    //当点击事件发生时调用弹出层
+
+             message: $("#form"),    //要弹出的元素box
+
+             css: {    //弹出元素的CSS属性
+
+                 top: '50%',
+
+         left: '50%',
+
+         textAlign: 'left',
+
+         marginLeft: '-320px',
+
+
+         marginTop: '-145px',
+
+                 width: '600px',
+
+                 background: 'none'
+
+            }
+
+        })
+        })
+        
+        });

@@ -1,0 +1,61 @@
+   <div class ="row">
+    <div class="span2">
+      <h4>年龄<h4>
+    </div>
+    <div class="span2">
+      <h4>房间<h4>
+    </div>
+    <div class="span2">
+      <h4>姓名<h4>
+    </div>
+    <div class="span2">
+      <h4>性别<h4>
+    </div>
+    <div class="span2">
+      <h4>地址<h4>
+    </div>
+    <div class="span2">
+      <h4>开房时间<h4>
+    </div>
+    <div class="span2">
+      <h4>时间<h4>
+    </div>
+    <div class="span2">
+      <h4>操作<h4>
+    </div>
+    </div>
+
+<% @people.each do |person| %>
+    <div class ="row">
+    <div class ="span2">
+    <%= person.age %>
+    </div>
+    <div class ="span2">
+    <%= person.room%>
+    </div>
+    <div class ="span2">
+    <%= person.name%>
+    </div>
+    <div class ="span2">
+    <%= person.sex%>
+    </div>
+    <div class ="span2">
+    <%= person.address%>
+    </div>
+    <div class ="span2">
+    <%= person.created_at%>
+    </div>
+    <div class ="span2">
+    <%= person.time%>
+    </div>
+    <div class ="span0">
+    <%= link_to 'Edit', edit_person_path(person) %>
+    </div>
+    <div class ="span0">
+    <%= link_to 'tui fang', person, :method=>:delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+   </div>
+  <%end%>
+
+
+

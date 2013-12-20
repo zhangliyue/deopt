@@ -1,0 +1,26 @@
+<div class="content">
+ <div class ="box">
+<%= simple_form_for @person do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <fieldset>
+      <legend>客人信息</legend>
+    <%= f.input :name, label: '姓名' %>
+    <%= f.input :age, collection: 18..70, label:'年龄' %>
+    <%= f.input :address, label:'地址' %>
+    <%= f.input :time, collection: ["钟点","一天","两天"], label:'时间' %>
+    <%= f.input :sex, collection: ["男","女"],label:'性别' %>
+    <%= f.submit'确定', :class => ' btn btn-primary btn-inverse' %>
+     </fieldset>
+<% end %>
+</div>
+</div>

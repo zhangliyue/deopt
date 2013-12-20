@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  leibie: MyString
+  : MyString
+  number: MyString
+  : 1
+  zhuangtai: MyString
+  : MyString
+  price: MyString
+  : 1
+
+two:
+  leibie: MyString
+  : MyString
+  number: MyString
+  : 1
+  zhuangtai: MyString
+  : MyString
+  price: MyString
+  : 1

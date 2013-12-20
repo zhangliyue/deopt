@@ -1,0 +1,7 @@
+ - for room in @rooms 
+%tr[room]
+%td= room.name
+%td= room.zhuangtai
+...
+= link_to 'Update draft timesheets count', counts_clients_path, :remote =>
+true, 'data-type' => :json, :id => 'update_draft_timesheets
