@@ -6,6 +6,7 @@
 development:
   adapter: sqlite3
   database: db/development.sqlite3
+  encoding: utf8
   pool: 5
   timeout: 5000
 
@@ -15,14 +16,16 @@ development:
 test:
   adapter: sqlite3
   database: db/test.sqlite3
+  encoding: utf8
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: mysql2
+  encoding: utf8
   reconnect: false
   database: deopt_production
   pool: 5
   username: root
-  password: 123456
+  password: '123456'
   host: localhost

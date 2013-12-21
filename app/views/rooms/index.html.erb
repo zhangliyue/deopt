@@ -14,34 +14,15 @@
     <td> <%= room.zhuangtai%></td>
      <td><%= room.price%></td>
     <td><%= link_to '查看', chakan_rooms_path(:room_id=>room)%>
-   <a href ="rooms/chakan?room_id=2" ref ="facebox">text</a>
-   <%= link_to '开房', new_person_path(:id=>room), :remote =>true%>
+   <%= link_to '开房', new_person_path(:id=>room) %>
     <%= link_to '退房',room, :method => :delete, :confirm =>'are you sure?'%></td>
-    <td><%= link_to '编辑房间',edit_room_path(room), :remote => true%></td>
+    <td><%= link_to '编辑房间',edit_room_path(room)%></td>
    
   
 </tr>
 <% end %>
 </table>
 </div>
-<div id="form">
-<h2>jsjjj<h2>
-</div>
-<button id="box">jjjj</button>
- <script>
- $(function(){
-
-$('#box').click(function(){  
-
-        $.blockUI({    
-
-             message: $('#form'),    
-
-
-        });
-        });
-        });
-</script>
 
 
 
