@@ -31,6 +31,8 @@ gem 'simple_form'
 gem 'facebox-rails' 
  gem 'thin'
 gem 'capistrano'
+gem 'ruby-prof', :git => 'git://github.com/wycats/ruby-prof.git'
+gem 'test-unit'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

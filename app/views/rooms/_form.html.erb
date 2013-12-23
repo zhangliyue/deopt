@@ -12,8 +12,8 @@
     </div>
   <% end %>
 
-    <%= f.input :leibie,collection:["套房","普通","单间"], label:'类别' %>
-    <%= f.input :number, label:'编号' %>
+    <%= f.input :leibie,collection:["tao fang","pu tong","dan jian"], label:'类别' %>
+    <%= f.input :number,label:'编号' %>
     <%= f.input :price, label:'价格' %>
     <%= f.input :zhuangtai, collection:["yi kai","kong fang"], label:'状态' %>
     <%= f.submit'确定', :class => ' btn btn-primary btn-inverse' %>

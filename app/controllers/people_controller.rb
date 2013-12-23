@@ -35,7 +35,7 @@ class PeopleController < ApplicationController
     @@current_room<<room
 
     respond_to do |format|
-      format.js
+      format.html
     end
   end
   def new_people
