@@ -1,21 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  age: MyString
-  : 1
-  name: MyString
-  : MyString
-  sex: MyString
-  : MyString
-  address: MyString
-  : MyString
+  age: 17
+  name: zhangyue
+  sex: nan
+  address: shichuandazhou
+  room: 1
+
 
 two:
-  age: MyString
-  : 1
-  name: MyString
-  : MyString
-  sex: MyString
-  : MyString
-  address: MyString
-  : MyString
+  age: 34
+  name: zhangjie
+  sex: nan
+  address: shichuanguangan
+  room: 2

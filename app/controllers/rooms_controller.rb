@@ -60,7 +60,7 @@ end
 
     respond_to do |format|
       if @room.save
-        format.html { redirect_to chakan_rooms_path @room, notice: 'Room was successfully created.' }
+        format.html { redirect_to rooms_path }
         format.json { render json: @room, status: :created, location: @room }
       else
         format.html { render action: "new" }
